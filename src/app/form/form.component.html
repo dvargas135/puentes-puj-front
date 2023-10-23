@@ -1,6 +1,11 @@
 <div class="container">
     <div [hidden]="submitted">
-        <h1 class="text-center">Formulario de Puentes — Pontificia Universidad Javeriana</h1>
+        <h1 class="fw-bold text-center">INSTITUTO NACIONAL DE VÍAS</h1>
+        <h2 class="text-center">SECRETARÍA GENERAL TÉCNICA</h2>
+        <h2 class="text-center">Sistema de Administración de Puentes</h2>
+        <h2 class="fw-bold text-center">SIPUCOL</h2>
+        <h3 class="fw-bold text-center">Formato de Inventario de Puentes</h3>
+        <h2 class="fw-bold text-center">Pontificia Universidad Javeriana</h2>
         <hr class="my-4 custom-hr">
         <form (ngSubmit)="onSubmit()" #appForm="ngForm">
             <div class="row">
@@ -60,7 +65,7 @@
             <div class="d-flex">
                 <!-- Pasos -->
                 <div class="col-6 leftcolumn border-end">
-                    <h3 class="text-center">Pasos</h3>
+                    <h3 class="fw-bold text-center">Pasos</h3>
                     <!-- Primer Paso -->
                     <div class="row align-items-end border-top">
                         <div class="col-6 d-flex flex-column">
@@ -70,7 +75,7 @@
                                     <div class="form-group">
                                         <label for="name">No.</label>
                                         <input type="text" class="form-control" id="paso_number" required
-                                            [(ngModel)]="model.paso_number" name="paso_number" #name="ngModel" />
+                                            [(ngModel)]="model.paso_number" name="paso_number" #name="ngModel" disabled placeholder="1"/>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -145,7 +150,7 @@
                                     <div class="form-group">
                                         <label for="name">No.</label>
                                         <input type="text" class="form-control" id="paso_number" required
-                                            [(ngModel)]="model.paso_number" name="paso_number" #name="ngModel" />
+                                            [(ngModel)]="model.paso_number" name="paso_number" #name="ngModel" disabled placeholder="2"/>
                                     </div>
                                 </div>
                                 <div class="col">
@@ -216,10 +221,10 @@
                     <hr class="my-4 custom-hr">
 
                     <!-- Datos Administrativos -->
-                    <h3 class="text-center">Datos Administrativos</h3>
+                    <h3 class="fw-bold text-center">Datos Administrativos</h3>
                     <div class="d-flex">
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group leftcolumn">
                                 <label for="name">Año de construcción</label>
                                 <input type="text" class="form-control" id="paso_galibo_dm" required
                                     [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
@@ -227,7 +232,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group rightcolumn">
                                 <label for="name">Año de reconstrucción</label>
                                 <input type="text" class="form-control" id="paso_galibo_dm" required
                                     [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
@@ -237,7 +242,7 @@
                     </div>
                     <div class="d-flex">
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group leftcolumn">
                                 <label for="name">Dirección de absc. de la carretera</label>
                                 <input type="text" class="form-control" id="paso_galibo_dm" required
                                     [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
@@ -245,7 +250,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group rightcolumn">
                                 <label for="name">Requisitos de inspección</label>
                                 <input type="text" class="form-control" id="paso_galibo_dm" required
                                     [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
@@ -255,7 +260,7 @@
                     </div>
                     <div class="d-flex">
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group leftcolumn">
                                 <label for="name">Número de secciones de inspección</label>
                                 <input type="text" class="form-control" id="paso_galibo_dm" required
                                     [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
@@ -263,7 +268,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group rightcolumn">
                                 <label for="name">Estación de conteo</label>
                                 <input type="text" class="form-control" id="paso_galibo_dm" required
                                     [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
@@ -273,7 +278,7 @@
                     </div>
                     <div class="d-flex">
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group leftcolumn">
                                 <label for="name">Fecha de recolección de datos</label>
                                 <input type="text" class="form-control" id="paso_galibo_dm" required
                                     [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
@@ -281,7 +286,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="form-group">
+                            <div class="form-group rightcolumn">
                                 <label for="name">Iniciales del inspector</label>
                                 <input type="text" class="form-control" id="paso_galibo_dm" required
                                     [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
@@ -289,7 +294,156 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Datos admin ends -->
+
+                    <!-- Horizontal separator -->
+                    <hr class="my-4 custom-hr">
+
+                    <!-- Datos Técnicos -->
+                    <h3 class="fw-bold text-center">Datos Técnicos</h3>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Número de luces</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Longitud luz menor (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Longitud luz mayor (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Longitud total (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Ancho del tablero (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Ancho del separador (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Ancho del andén izquierdo (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Ancho del andén derecho (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Ancho de calzada (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Ancho entre bordillos (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Ancho del acceso (m)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Altura de pilas</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Altura de estribos</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Puente en terraplén (S/N)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Puente en Curva/Tangente (C/T)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Esviajamiento (gra)</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <!-- First column ends-->
 
@@ -299,7 +453,7 @@
                 <!-- Second column starts -->
                 <div class="col-6 rightcolumn">
                     <!-- Subestructura -->
-                    <h3 class="text-center">Subestructura</h3>
+                    <h3 class="fw-bold text-center">Subestructura</h3>
                     <div class="row align-items-start border-top">
                         <!-- First column starts -->
                         <div class="col-6 d-flex flex-column border-end">
@@ -412,13 +566,138 @@
 
                     <!-- Horizontal separator -->
                     <hr class="my-4 custom-hr">
+
+                    <!-- Apoyos -->
+                    <h3 class="fw-bold text-center">Apoyos</h3>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Tipos de apoyos fijos sobre estribos</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Tipos de apoyos móviles sobre estribos</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Tipos de apoyos fijos en pilas</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Tipos de apoyos móviles en pilas</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex border-bottom">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Tipos de apoyos fijos en vigas</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Tipos de apoyos móviles en vigas</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group leftcolumn">
+                                <label for="name">Vehículo de diseño</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Clase de distribución de carga</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horizontal separator -->
+                    <hr class="my-4 custom-hr">
+
+                    <!-- Miembros interesados -->
+                    <h3 class="fw-bold text-center">Miembros interesados</h3>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Propietario</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Departamento</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Administrador Vial</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Proyectista</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group rightcolumn">
+                                <label for="name">Municipio</label>
+                                <input type="text" class="form-control" id="paso_galibo_dm" required
+                                    [(ngModel)]="model.paso_galibo_dm" name="paso_galibo_dm"
+                                    #identification="ngModel" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
 
 
 
-            <div class="row">
+            <!--div class="row">
                 <div class="col-xs-1">
                     <div class="form-group">
                         <label for="name" style="display: block; white-space: nowrap;">No.</label>
@@ -565,7 +844,7 @@
                             name="no_lights" #name="ngModel" />
                     </div>
                 </div>
-            </div>
+            </div-->
 
             <button type="submit" class="btn btn-success" [disabled]="!appForm.form.valid">
                 Submit

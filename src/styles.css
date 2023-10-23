@@ -6,12 +6,13 @@ html, body {
 }
 
 body {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.96)), url('assets/logo-uni.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.966), rgba(255, 255, 255, 0.966)), url('assets/logo-uni.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
 }
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
