@@ -1,10 +1,34 @@
 export class App {
-
-    constructor(
-      public id: number,
-      public name: string,
-      public power: string,
-      public alterEgo?: string
-    ) {  }
-  
-  }
+	constructor(
+		public name?: string,
+		public id?: string,
+		public road?: string,
+		public pr?: string,
+		public regional?: string,
+		public paso_number?: string,
+		public paso_type?: string,
+		public paso_isFirst?: string,
+		public paso_supinf?: string,
+		public paso_galibo_i?: string,
+		public paso_galibo_im?: string,
+		public paso_galibo_dm?: string,
+		public paso_galibo_d?: string,
+		public paso_number_two?: string,
+		public paso_type_two?: string,
+		public paso_isFirst_two?: string,
+		public paso_supInf_two?: string,
+		public paso_galibo_one_two?: string,
+		public paso_galibo_im_two?: string,
+		public paso_galibo_dm_two?: string,
+		public paso_galibo_d_two?: string,
+		public constructionyear?: string,
+		public reconstructionyear?: string,
+		public absc_direction?: string,
+		public inspectionrequirements?: string,
+		public section_numbers?: string,
+		public count_station?: string,
+		public recollection_date?: string,
+		public inspector_initials?: string,
+		public no_lights?: string
+	) { }
+}

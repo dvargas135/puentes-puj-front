@@ -12,7 +12,7 @@ export class FormComponent {
   powers = ['Really Smart', 'Super Flexible',
     'Super Hot', 'Weather Changer'];
 
-  model = new App(18, 'Dr. IQ', this.powers[0], 'Chuck Overstreet');
+  model = new App();
 
   submitted = false;
 
@@ -20,16 +20,14 @@ export class FormComponent {
 
 
   newApp() {
-    this.model = new App(42, '', '');
+    this.model = new App();
   }
 
-  skyDog(): App {
-    const myApp = new App(42, 'SkyDog',
-      'Fetch any object at any distance',
-      'Leslie Rollover');
-    console.log('My app is called ' + myApp.name); // "My app is called SkyDog"
-    return myApp;
-  }
+  //skyDog(): App {
+  //const myApp = new App(42, 'SkyDog', 'Fetch any object at any distance', 'Leslie Rollover');
+  //console.log('My app is called ' + myApp.name);
+  //return myApp;
+  //}
 
   //////// NOT SHOWN IN DOCS ////////
 
@@ -39,7 +37,4 @@ export class FormComponent {
     return form && form.controls.name &&
       form.controls.name.value; // Dr. IQ
   }
-
-  /////////////////////////////
-
 }
