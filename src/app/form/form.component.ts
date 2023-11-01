@@ -1,6 +1,15 @@
 import { Component } from '@angular/core';
 
 import { App } from '../app';
+import { Puente } from '../models/puente';
+import { Paso } from '../models/paso/paso';
+import { Galibo } from '../models/paso/galibo/galibo';
+import { DatosAdministrativos } from '../models/datos-administrativos';
+import { DatosTecnicos } from '../models/datos-tecnicos';
+import { Estribo } from '../models/subestructura/estribo';
+import { Pila } from '../models/subestructura/pila';
+import { Detalle } from '../models/subestructura/detalle';
+import { Senial } from '../models/subestructura/senial';
 
 @Component({
   selector: 'app-form',
@@ -13,6 +22,15 @@ export class FormComponent {
     'Super Hot', 'Weather Changer'];
 
   model = new App();
+  puente: Puente = new Puente();
+  paso: Paso = new Paso();
+  galibo: Galibo = new Galibo();
+  datos_administrativos: DatosAdministrativos = new DatosAdministrativos();
+  datos_tecnicos: DatosTecnicos = new DatosTecnicos();
+  estribo: Estribo = new Estribo();
+  pila: Pila = new Pila();
+  detalle: Detalle = new Detalle();
+  senial: Senial = new Senial();
 
   submitted = false;
 
