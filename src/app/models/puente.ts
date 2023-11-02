@@ -1,4 +1,5 @@
 import { Paso } from "./paso/paso";
+import { Superestructura } from "./superestructura";
 
 export class Puente {
     constructor(
@@ -16,5 +17,6 @@ export class Puente {
         public administrador?: string,
         public anio_proxima_inspeccion?: string,
         public pasos: Paso[] = [new Paso(), new Paso()],
+        public superestructuras: Superestructura[] = [new Superestructura(), new Superestructura()],
     ) { }
 }

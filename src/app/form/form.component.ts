@@ -10,6 +10,10 @@ import { Estribo } from '../models/subestructura/estribo';
 import { Pila } from '../models/subestructura/pila';
 import { Detalle } from '../models/subestructura/detalle';
 import { Senial } from '../models/subestructura/senial';
+import { Apoyo } from '../models/apoyo';
+import { MiembrosInteresados } from '../models/miembros-interesados';
+import { Superestructura } from '../models/superestructura';
+import { PosicionGeografica } from '../models/posicion_geografica/posicion-geografica';
 
 @Component({
   selector: 'app-form',
@@ -17,9 +21,6 @@ import { Senial } from '../models/subestructura/senial';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent {
-
-  powers = ['Really Smart', 'Super Flexible',
-    'Super Hot', 'Weather Changer'];
 
   model = new App();
   puente: Puente = new Puente();
@@ -31,11 +32,14 @@ export class FormComponent {
   pila: Pila = new Pila();
   detalle: Detalle = new Detalle();
   senial: Senial = new Senial();
+  apoyo: Apoyo = new Apoyo();
+  miembros_interesados: MiembrosInteresados = new MiembrosInteresados();
+  superestructura: Superestructura = new Superestructura();
+  posicion_geografica: PosicionGeografica = new PosicionGeografica();
 
   submitted = false;
 
   onSubmit() { this.submitted = true; }
-
 
   newApp() {
     this.model = new App();
