@@ -14,6 +14,7 @@ import { Apoyo } from '../models/apoyo';
 import { MiembrosInteresados } from '../models/miembros-interesados';
 import { Superestructura } from '../models/superestructura';
 import { PosicionGeografica } from '../models/posicion_geografica/posicion-geografica';
+import { Carga } from '../models/carga';
 
 @Component({
   selector: 'app-form',
@@ -36,6 +37,7 @@ export class FormComponent {
   miembros_interesados: MiembrosInteresados = new MiembrosInteresados();
   superestructura: Superestructura = new Superestructura();
   posicion_geografica: PosicionGeografica = new PosicionGeografica();
+  carga: Carga = new Carga();
 
   submitted = false;
 

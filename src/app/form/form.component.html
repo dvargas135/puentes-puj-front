@@ -456,21 +456,21 @@
                                 style="margin-bottom: 0px;">Estribos</label>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Tipo</label>
+                                    <label for="name" class="subestructura">Tipo</label>
                                     <input type="text" class="form-control" required [(ngModel)]="estribo.tipo"
                                         name="tipo" #tipo="ngModel" />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Material</label>
+                                    <label for="name" class="subestructura">Material</label>
                                     <input type="text" class="form-control" required [(ngModel)]="estribo.material"
                                         name="material" #material="ngModel" />
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="form-group">
-                                    <label for="name">Tipo de cimentación</label>
+                                <div class="form-group subestructura">
+                                    <label for="name" class="subestructura">Tipo de cimentación</label>
                                     <input type="text" class="form-control" required
                                         [(ngModel)]="estribo.tipo_cimentacion" name="tipo_cimentacion"
                                         #tipo_cimentacion="ngModel" />
@@ -482,14 +482,14 @@
                                 style="margin-bottom: 0px;">Detalles</label>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Tipo de baranda</label>
+                                    <label for="name" class="subestructura">Tipo de baranda</label>
                                     <input type="text" class="form-control" required [(ngModel)]="detalle.tipo_baranda"
                                         name="tipo_baranda" #tipo_baranda="ngModel" />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Superficie de rodadura</label>
+                                    <label for="name" class="subestructura">Superficie de rodadura</label>
                                     <input type="text" class="form-control" required
                                         [(ngModel)]="detalle.superficie_rodadura" name="superficie_rodadura"
                                         #superficie_rodadura="ngModel" />
@@ -497,7 +497,7 @@
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Junta de expansión</label>
+                                    <label for="name" class="subestructura">Junta de expansión</label>
                                     <input type="text" class="form-control" required
                                         [(ngModel)]="detalle.junta_expansion" name="junta_expansion"
                                         #junta_expansion="ngModel" />
@@ -510,21 +510,21 @@
                             <label class="fw-bold text-center border-bottom" style="margin-bottom: 0px;">Pilas</label>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Tipo</label>
+                                    <label for="name" class="subestructura">Tipo</label>
                                     <input type="text" class="form-control" required [(ngModel)]="pila.tipo" name="tipo"
                                         #tipo="ngModel" />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Material</label>
+                                    <label for="name" class="subestructura">Material</label>
                                     <input type="text" class="form-control" required [(ngModel)]="pila.material"
                                         name="material" #material="ngModel" />
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="form-group">
-                                    <label for="name">Tipo de cimentación</label>
+                                <div class="form-group subestructura">
+                                    <label for="name" class="subestructura">Tipo de cimentación</label>
                                     <input type="text" class="form-control" required [(ngModel)]="pila.tipo_cimentacion"
                                         name="tipo_cimentacion" #tipo_cimentacion="ngModel" />
                                 </div>
@@ -533,14 +533,14 @@
                             <label class="fw-bold text-center border-bottom" style="margin-bottom: 0px;">Señales</label>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Carga máxima</label>
+                                    <label for="name" class="subestructura">Carga máxima</label>
                                     <input type="text" class="form-control" required [(ngModel)]="senial.carga_maxima"
                                         name="carga_maxima" #carga_maxima="ngModel" />
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Velocidad máxima</label>
+                                    <label for="name" class="subestructura">Velocidad máxima</label>
                                     <input type="text" class="form-control" required
                                         [(ngModel)]="senial.velocidad_maxima" name="velocidad_maxima"
                                         #velocidad_maxima="ngModel" />
@@ -548,7 +548,7 @@
                             </div>
                             <div class="col">
                                 <div class="form-group">
-                                    <label for="name">Otra</label>
+                                    <label for="name" class="subestructura">Otra</label>
                                     <input type="text" class="form-control" required [(ngModel)]="senial.otra"
                                         name="otra" #otra="ngModel" />
                                 </div>
@@ -593,7 +593,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex border-bottom">
+                    <div class="d-flex">
                         <div class="col">
                             <div class="form-group leftcolumn">
                                 <label for="name">Tipos de apoyos fijos en vigas</label>
@@ -630,8 +630,8 @@
                     <!-- Horizontal separator -->
                     <hr class="my-4 custom-hr">
 
-                    <!-- Miembros interesados -->
-                    <h3 class="fw-bold text-center">Miembros interesados</h3>
+                    <!-- Miembros Interesados -->
+                    <h3 class="fw-bold text-center">Miembros Interesados</h3>
                     <div class="d-flex border-top">
                         <div class="col">
                             <div class="form-group leftcolumn">
@@ -723,12 +723,204 @@
                         </div>
                     </div>
                     <div class="d-flex">
-                        afds
+                        <div class="row align-items-end border-top">
+                            <div class="form-group">
+                                <label for="name">Coeficiente de aceleración sísmica (Aa)</label>
+                                <input type="text" class="form-control" required
+                                    [(ngModel)]="posicion_geografica.coeficiente_aceleracion_sismica" name="coeficiente_aceleracion_sismica"
+                                    #coeficiente_aceleracion_sismica="ngModel" />
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name">Paso por el cauce (S/N)</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="posicion_geografica.paso_cauce" name="paso_cauce"
+                                        #paso_cauce="ngModel" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name">Longitud variante</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="posicion_geografica.longitud_variante" name="longitud_variante"
+                                        #longitud_variante="ngModel" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name">Existe variante (S/N)</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="posicion_geografica.existe_variante" name="existe_variante"
+                                        #coeficiente_aceleracion_sismica="ngModel" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="name">Estado (B/R/M)</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="posicion_geografica.estado" name="estado"
+                                        #estado="ngModel" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    
+                    <!-- Horizontal separator -->
+                    <hr class="my-4 custom-hr">
+
+                    <!-- Carga -->
+                    <h3 class="fw-bold text-center">Carga</h3>
+                    <div class="row align-items-end border-top">
+                        <label class="fw-bold text-center border-bottom" style="margin-bottom: 0px;">Capacidad de carga para tránsito legal</label>
+                        <div class="d-flex leftcolumn subestructura">
+                            <div class="col">
+                                <div class="form-group leftcolumn subestructura">
+                                    <label for="name">Long. Luz Crítica (m)</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="carga.longitud_luz_critica" name="longitud_luz_critica"
+                                        #longitud_luz_critica="ngModel" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group rightcolumn subestructura">
+                                    <label for="name">Factor de Clasif.</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="carga.factor_clasificacion" name="factor_clasificacion"
+                                        #factor_clasificacion="ngModel" />
+                                </div>
+                            </div>
+                        </div>
+                        <label class="fw-bold text-center border-bottom" style="margin-bottom: 0px;">Capacidad de carga para transportes especiales</label>
+                        <div class="d-flex leftcolumn subestructura">
+                            <div class="col">
+                                <div class="form-group leftcolumn subestructura">
+                                    <label for="name">Fuerza cortante (f)</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="carga.fuerza_cortante" name="fuerza_cortante"
+                                        #fuerza_cortante="ngModel" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group leftcolumn rightcolumn subestructura">
+                                    <label for="name">Momento (t, m)</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="carga.momento" name="momento"
+                                        #momento="ngModel" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group rightcolumn subestructura">
+                                    <label for="name">Línea de carga por rueda (t)</label>
+                                    <input type="text" class="form-control" required
+                                        [(ngModel)]="carga.linea_carga_por_rueda" name="linea_carga_por_rueda"
+                                        #linea_carga_por_rueda="ngModel" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group">
+                                <label for="name">Observaciones</label>
+                                <input type="text" class="form-control" required
+                                    [(ngModel)]="carga.observaciones" name="observaciones"
+                                    #observaciones="ngModel" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Second column ends -->
+            <!-- Second column ends -->
+            </div>
+
+            <!-- Horizontal separator -->
+            <hr class="my-4 custom-hr">
+
+            <h1 class="fw-bold text-center">INSTITUTO NACIONAL DE VÍAS</h1>
+            <h2 class="text-center">SECRETARÍA GENERAL TÉCNICA</h2>
+            <h2 class="text-center">Sistema de Administración de Puentes</h2>
+            <h2 class="fw-bold text-center">SIPUCOL</h2>
+            <h3 class="fw-bold text-center">Formato de Inspección Principal de Puentes</h3>
+            <h2 class="fw-bold text-center">Pontificia Universidad Javeriana</h2>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.nombre" name="nombre"
+                            #name="ngModel" />
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <div class="form-group">
+                        <label for="identification">Identificación</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.identif" name="identif"
+                            #identif="ngModel" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="box1">Carretera</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.carretera" name="carretera"
+                            #carretera="ngModel" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="box2">PR.</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.pr" name="pr"
+                            #pr="ngModel" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="box3">Fecha</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.fecha" name="fecha"
+                            #fecha="ngModel" />
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-group">
+                        <label for="box3">Tiempo</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.tiempo" name="tiempo"
+                            #tiempo="ngModel" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="box3">Temperatura</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.temperatura" name="temperatura"
+                            #temperatura="ngModel" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="box3">Inspector</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.inspector" name="inspector"
+                            #inspector="ngModel" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="box3">Administrador</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.administrador" name="administrador"
+                            #administrador="ngModel" />
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="box3">Año próxima inspección</label>
+                        <input type="text" class="form-control" required [(ngModel)]="puente.anio_proxima_inspeccion" name="anio_proxima_inspeccion"
+                            #anio_proxima_inspeccion="ngModel" />
+                    </div>
+                </div>
             </div>
 
             <button type="submit" class="btn btn-success" [disabled]="!appForm.form.valid">
